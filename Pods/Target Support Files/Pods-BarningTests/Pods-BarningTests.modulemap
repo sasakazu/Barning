@@ -1,0 +1,6 @@
+framework module Pods_BarningTests {
+  umbrella header "Pods-BarningTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
