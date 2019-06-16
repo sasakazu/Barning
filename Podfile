@@ -8,6 +8,10 @@ target 'Barning' do
   # Pods for Barning
 
   pod 'Firebase'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'Firebase/Storage'
+  
   
   target 'BarningTests' do
     inherit! :search_paths

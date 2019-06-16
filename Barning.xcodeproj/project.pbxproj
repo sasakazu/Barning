@@ -15,6 +15,7 @@
 		73EABB6A22B389700089713D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73EABB6822B389700089713D /* LaunchScreen.storyboard */; };
 		73EABB7522B389710089713D /* BarningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EABB7422B389710089713D /* BarningTests.swift */; };
 		73EABB8022B389710089713D /* BarningUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EABB7F22B389710089713D /* BarningUITests.swift */; };
+		73EABBCF22B3A6540089713D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73EABBCE22B3A6540089713D /* GoogleService-Info.plist */; };
 		94924A597D188CF4FFD3AC90 /* Pods_BarningTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A22FCCF70B25922CD54A609C /* Pods_BarningTests.framework */; };
 		A2A872F2F6053DD16C582BBF /* Pods_BarningUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8125B362E7DE617541850DBF /* Pods_BarningUITests.framework */; };
 /* End PBXBuildFile section */
@@ -54,6 +55,7 @@
 		73EABB7B22B389710089713D /* BarningUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarningUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73EABB7F22B389710089713D /* BarningUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarningUITests.swift; sourceTree = "<group>"; };
 		73EABB8122B389710089713D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73EABBCE22B3A6540089713D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8125B362E7DE617541850DBF /* Pods_BarningUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BarningUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85BD83C4DEA902C763F36010 /* Pods-BarningTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarningTests.release.xcconfig"; path = "Target Support Files/Pods-BarningTests/Pods-BarningTests.release.xcconfig"; sourceTree = "<group>"; };
 		A22FCCF70B25922CD54A609C /* Pods_BarningTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BarningTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,7 +101,6 @@
 				2C1A1BAC03F4071AA739F67C /* Pods-BarningUITests.debug.xcconfig */,
 				3A0350A6E41DEA66C2AB1CEF /* Pods-BarningUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -132,6 +133,7 @@
 				73EABB6122B3896E0089713D /* ViewController.swift */,
 				73EABB6322B3896E0089713D /* Main.storyboard */,
 				73EABB6622B389700089713D /* Assets.xcassets */,
+				73EABBCE22B3A6540089713D /* GoogleService-Info.plist */,
 				73EABB6822B389700089713D /* LaunchScreen.storyboard */,
 				73EABB6B22B389700089713D /* Info.plist */,
 			);
@@ -275,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73EABB6A22B389700089713D /* LaunchScreen.storyboard in Resources */,
+				73EABBCF22B3A6540089713D /* GoogleService-Info.plist in Resources */,
 				73EABB6722B389700089713D /* Assets.xcassets in Resources */,
 				73EABB6522B3896E0089713D /* Main.storyboard in Resources */,
 			);
@@ -306,14 +309,18 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Barning/Pods-Barning-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
